@@ -15,7 +15,7 @@ services:
     environment:
       - PUID=$UID
       - PGID=$GID
-      - TZ=Etc/UTC
+      - TZ=Europe/Bucharest
       - DELUGE_LOGLEVEL=error #optional
     volumes:
       - /mnt/5dd038e4-e1e4-46fb-8c77-cd3dfc661647/deluge/config:/config
