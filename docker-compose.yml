@@ -1,11 +1,8 @@
 ---
 
 networks:
-  deluge-net:
-    ipam:
-      driver: default
-      config:
-        - subnet: 172.20.0.0/16
+  skynet:
+    external: true
 
 services:
   deluge:
@@ -27,5 +24,5 @@ services:
       - 58846:58846 #optional
     restart: unless-stopped
     networks:
-      deluge-net:
-        ipv4_address: 172.20.0.2
+      skynet:
+        ipv4_address: 172.22.0.3
